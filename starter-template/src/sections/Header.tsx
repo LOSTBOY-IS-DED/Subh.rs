@@ -1,4 +1,4 @@
-import { header } from "motion/react-client";
+
 import { FC } from "react";
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
@@ -37,7 +37,7 @@ const Header: FC = () => {
             </a>
           </div>
           {/* for the nav content */}
-          <div>
+          <div className="flex items-center gap-4">
             <div className="border border-stone-400 size-11 rounded-full inline-flex justify-center items-center">
               <svg
               width="24"
@@ -50,6 +50,7 @@ const Header: FC = () => {
               <rect x="3" y="7" width="18" height="2" fill="currentColor" />
             </svg>
             </div>
+            <button className="bg-red-orange-500 h-11 px-6 rounded-xl text-white border border-red-orange-500 uppercase hidden md:inline-flex items-center">Contact Me</button>
           </div>
         </div>
       </div>
