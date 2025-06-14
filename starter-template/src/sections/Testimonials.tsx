@@ -42,7 +42,7 @@ const Testimonials: FC = () => {
 
   return (
     <section className="section">
-      <h2 className="text-4xl flex flex-col overflow-hidden">
+      <h2 className="text-4xl md:text-7xl lg:text-8xl flex flex-col overflow-hidden">
         <span className="whitespace-nowrap">
           Some Nice words form my Clients
         </span>
@@ -55,8 +55,8 @@ const Testimonials: FC = () => {
         <div className="mt-20">
           {testimonials.map(
             ({ name, company, role, image, quote, imagePositionY } , index) => index === testimonialIndex && (
-              <div key={name}>
-                <div className="aspect-square">
+              <div key={name} className="grid md:grid-cols-5 md:gap-8 lg:gap-16 md:items-center">
+                <div className="aspect-square md:aspect-[9/16] md:col-span-2">
                   <Image
                     src={image}
                     alt={name}
@@ -66,15 +66,15 @@ const Testimonials: FC = () => {
                     }}
                   />
                 </div>{" "}
-                <div>
-                  <blockquote>
-                    <div className="text-3xl mt-8">
+                <div className="md:col-span-3">
+                  <blockquote >
+                    <div className="text-3xl md:text-5xl lg:text-6xl mt-8 md:mt-0">
                       <span>&ldquo;</span>
                       <span>{quote}</span>
                       <span>&rdquo;</span>
                     </div>
 
-                    <cite className="mt-4 not-italic block">
+                    <cite className="mt-4 md:mt-8 md:text-lg not-italic block lg:text-xl">
                       {name} , {role} at {company}
                     </cite>
                   </blockquote>
@@ -83,7 +83,7 @@ const Testimonials: FC = () => {
             )
           )}
         </div>
-        <div className="flex gap-4 mt-6">
+        <div className="flex gap-4 mt-6 lg:mt-10">
           <button className="border border-stone-400 size-11 inline-flex items-center justify-center rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
