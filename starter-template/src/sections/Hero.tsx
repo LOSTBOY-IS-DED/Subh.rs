@@ -1,6 +1,6 @@
 import { FC } from "react";
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
-import heroImage from "@/assets/images/hero-image.jpg";
+import heroImage from "@/assets/images/subh.png";
 import Image from "next/image";
 import Button from "@/components/Button";
 
