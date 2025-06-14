@@ -10,7 +10,7 @@ const archivo = Archivo({
 })
 
 export const metadata: Metadata = {
-  title: "Portfolio Website",
+  title: "Subh",
   description: "A perfect portfolio website that showcases your skills , minimal and smooth micro-interactions, perfect for freelancers",
 };
 
