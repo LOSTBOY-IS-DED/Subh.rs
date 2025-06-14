@@ -11,9 +11,8 @@ const Hero: FC = () => {
         <div className="md:col-span-7 flex flex-col justify-center">
           <div className="container !max-w-full">
             <h1 className="text-5xl md:text-6xl lg:text-7xl mt-40 md:mt-0">
-              I write code, I ship fast faster than your ex moved on. From stack
-              to chain, I build empires... but don&apos;t worry, I&apos;ve still
-              got time to ruin your sleep schedule too. 😘
+              Full-stack to blockchain, I craft bold products with brains and beauty—if your idea&apos;s hot, I&apos;ll make it legendary. Let&apos;s build.
+
             </h1>
             <div className="flex flex-col md:flex-row md:items-center mt-10 items-start gap-6">
               <Button
