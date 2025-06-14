@@ -7,11 +7,13 @@ import Button from "@/components/Button";
 const Hero: FC = () => {
   return (
     <section>
-      <div className="container !max-w-full">
-        <h1 className="text-5xl mt-40">
+      <div className="grid md:grid-cols-12 md:h-screen items-stretch">
+        <div className="col-span-7 flex flex-col justify-center">
+                <div className="container !max-w-full">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl mt-40 md:mt-0">
           I write code, I ship fast faster than your ex moved on. From stack to chain, I build empires... but don&apos;t worry, I&apos;ve still got time to ruin your sleep schedule too. 😘
         </h1>
-        <div className="flex flex-col mt-10 items-start gap-6">
+        <div className="flex flex-col md:flex-row md:items-center mt-10 items-start gap-6">
           <Button variant="secondary" iconAfter={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -35,9 +37,15 @@ const Hero: FC = () => {
         </div>
         
       </div>
-      <div className="mt-20">
-        <Image src={heroImage} alt="My Profile picture" />
+        </div>
+        <div className="col-span-5">
+                <div className="mt-20 md:mt-0 md:h-full">
+        <Image src={heroImage} alt="My Profile picture" className="size-full object-cover" />
       </div>
+        </div>
+      </div>
+
+
     </section>
   );
 };

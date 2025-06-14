@@ -39,7 +39,7 @@ const Header: FC = () => {
           </div>
           {/* for the nav content */}
           <div className="flex items-center gap-4">
-            <div className="border border-stone-400 size-11 rounded-full inline-flex justify-center items-center">
+            <div className="border border-stone-400 size-11 rounded-full inline-flex justify-center items-center bg-stone-200">
               <svg
               width="24"
               height="24"
