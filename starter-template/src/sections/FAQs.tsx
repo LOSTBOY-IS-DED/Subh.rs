@@ -39,12 +39,12 @@ const FAQs: FC = () => {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="text-4xl">FAQs</h2>
-        <div className="mt-10">
+        <h2 className="text-4xl md:text-7xl lg:text-8xl">FAQs</h2>
+        <div className="mt-10 md:mt-16 lg:mt-20">
           {faqs.map(({ question, answer }) => (
-            <div key={question} className="border-t border-stone-400 border-dotted py-6 last:border-b">
-              <div className="flex justify-center items-center gap-4">
-                <div className="text-2xl">{question}</div>
+            <div key={question} className="border-t border-stone-400 border-dotted py-6 md:py-8 lg:py-10 last:border-b">
+              <div className="flex justify-between items-center gap-4">
+                <div className="text-2xl md:text-3xl lg:text-4xl">{question}</div>
                 <div className="border border-stone-400 rounded-full inline-flex justify-center items-center size-11 shrink-0">
                   <svg
                   xmlns="http://www.w3.org/2000/svg"
