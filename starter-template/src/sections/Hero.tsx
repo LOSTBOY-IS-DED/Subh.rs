@@ -8,7 +8,7 @@ const Hero: FC = () => {
   return (
     <section>
       <div className="grid md:grid-cols-12 md:h-screen items-stretch">
-        <div className="col-span-7 flex flex-col justify-center">
+        <div className="md:col-span-7 flex flex-col justify-center">
           <div className="container !max-w-full">
             <h1 className="text-5xl md:text-6xl lg:text-7xl mt-40 md:mt-0">
               I write code, I ship fast faster than your ex moved on. From stack
